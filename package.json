@@ -1,0 +1,19 @@
+{
+  "name": "moneytolia-case-design",
+  "version": "1.0.0",
+  "description": "Case",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-personal:benmuratyilmaz/moneytolia-case-design.git"
+  },
+  "author": "Murat Yılmaz",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "license": "MIT"
+}
