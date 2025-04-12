@@ -221,7 +221,9 @@
                     </div>
                   </td>
                   <td class="px-6 py-4">
-                    <div class="font-bold">Lorem İpsum jkasdhjkas jkdhajks jkahdjkadhs</div>
+                    <div class="font-bold">
+                      Lorem İpsum jkasdhjkas jkdhajks jkahdjkadhs
+                    </div>
                   </td>
                   <td class="px-6 py-4">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -231,6 +233,7 @@
                   <td class="px-6 py-4">
                     <div class="flex flex-row">
                       <a
+                        id="openModal"
                         class="bg-green-500 text-white text-md px-3 py-2 rounded-md me-3"
                         ><i class="fa-solid fa-pen-to-square"></i
                       ></a>
@@ -480,6 +483,41 @@
             </table>
           </div>
         </div>
+      </div>
+    </div>
+    <div
+      id="backdrop2"
+      class="fixed inset-0 bg-black opacity-80 hidden z-40"
+    ></div>
+    <div
+      id="modal"
+      class="fixed inset-0 flex items-center justify-center hidden z-50"
+    >
+      <div class="bg-white rounded-lg shadow-lg p-6 w-[90%] max-w-md">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-xl font-bold">Güncelle</h2>
+          <button id="closeModal" class="text-2xl">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <form action="">
+          <input
+            class="border border-[#B1BBC2] mb-5 rounded-md py-3 ps-3 w-full"
+            type="text"
+            placeholder="Başlık"
+          />
+          <textarea
+            class="border border-[#B1BBC2] mb-5 rounded-md py-3 ps-3 w-full"
+            name=""
+            id=""
+            placeholder="Kampanya Açıklama"
+          ></textarea>
+          <a
+            class="bg-green-500 border border-green-500 block w-full py-3 rounded-xl text-white hover:text-green-500 hover:bg-white transition-all delay-150 duration-300 text-center"
+            href="index.html"
+            >Güncelle</a
+          >
+        </form>
       </div>
     </div>
   </body>
