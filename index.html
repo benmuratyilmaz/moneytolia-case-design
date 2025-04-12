@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -39,7 +39,9 @@
           <div class="mx-4 lg:mx-6 w-0.5 h-10 bg-gray-300"></div>
           <img class="max-w-25" src="images/test-logo.png" alt="brand-logo" />
         </div>
-        <a class="block lg:hidden items-center flex text-3xl text-[#f4511e]" id="menuToggle"
+        <a
+          class="block lg:hidden items-center flex text-3xl text-[#f4511e]"
+          id="menuToggle"
           ><i class="fa-solid fa-bars"></i
         ></a>
         <div class="hidden lg:flex flex-row">
@@ -109,9 +111,11 @@
         </div>
       </div>
     </header>
-    <div class="flex justify-between align-center flex-row mx-3 mt-5 lg:mx-8 lg:mt-10 ">
+    <div
+      class="flex justify-between align-center flex-row mx-3 mt-5 lg:mx-8 lg:mt-10"
+    >
       <div
-        class="shadow-md flex-col rounded-md bg-white mr-5 py-5 px-4 min-w-[25%] h-[calc(100vh-200px)] hidden lg:block"
+        class="shadow-md flex-col rounded-md bg-white mr-5 py-5 px-4 min-w-[25%] hidden lg:block"
       >
         <section>
           <nav class="px-3">
@@ -134,8 +138,348 @@
           </nav>
         </section>
       </div>
-      <div class="max-w-[100%] lg:max-w-[75%] w-full py-5 px-4 bg-white rounded-md">
-        Burası içerik alanı
+      <div
+        class="max-w-[100%] lg:max-w-[75%] w-full py-5 px-4 bg-white rounded-md shadow-md"
+      >
+        <div class="mb-5">
+          <div class="flex flex-row items-center text-sm">
+            <span>Anaysafa</span>
+            <i class="fa-solid fa-chevron-right mx-2"></i>
+            <div>Kampanyalar</div>
+          </div>
+          <h1 class="text-4xl font-bold mb-1">Kampanyalar</h1>
+        </div>
+        <div>
+          <div class="relative overflow-x-auto">
+            <table
+              class="w-full text-sm text-left rtl:text-right text-gray-500"
+            >
+              <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                <tr>
+                  <th scope="col" class="px-6 py-3">Puanlandırma</th>
+                  <th scope="col" class="px-6 py-3">Başlık</th>
+                  <th scope="col" class="px-6 py-3">Açıklama</th>
+                  <th scope="col" class="px-6 py-3">İşlemler</th>
+                  <th scope="col" class="px-6 py-3">Tarih</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white border-b border-gray-200">
+                  <td class="px-6 py-4">
+                    <div class="flex items-center">
+                      <button
+                        class="inline-flex items-center justify-center p-1 text-sm font-medium h-6 w-6 text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                        type="button"
+                      >
+                        <span class="sr-only">Quantity button</span>
+                        <svg
+                          class="w-3 h-3"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 18 2"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M1 1h16"
+                          />
+                        </svg>
+                      </button>
+                      <div class="ms-3">
+                        <input
+                          type="number"
+                          id="first_product"
+                          class="bg-gray-50 w-14 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block px-2.5 py-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          placeholder="1"
+                          required
+                        />
+                      </div>
+                      <button
+                        class="inline-flex items-center justify-center h-6 w-6 p-1 ms-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                        type="button"
+                      >
+                        <span class="sr-only">Quantity button</span>
+                        <svg
+                          class="w-3 h-3"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 18 18"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 1v16M1 9h16"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4">
+                    <div class="font-bold">Lorem İpsum jkasdhjkas jkdhajks jkahdjkadhs</div>
+                  </td>
+                  <td class="px-6 py-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eius sunt ducimus quaerat, reiciendis eum possimus
+                    cupiditate fugit
+                  </td>
+                  <td class="px-6 py-4">
+                    <div class="flex flex-row">
+                      <a
+                        class="bg-green-500 text-white text-md px-3 py-2 rounded-md me-3"
+                        ><i class="fa-solid fa-pen-to-square"></i
+                      ></a>
+                      <a
+                        class="bg-red-500 text-white text-md px-3 py-2 rounded-md me-3"
+                        ><i class="fa-solid fa-trash"></i
+                      ></a>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4">13/04/1997</td>
+                </tr>
+                <tr class="bg-white border-b border-gray-200">
+                  <td class="px-6 py-4">
+                    <div class="flex items-center">
+                      <button
+                        class="inline-flex items-center justify-center p-1 text-sm font-medium h-6 w-6 text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                        type="button"
+                      >
+                        <span class="sr-only">Quantity button</span>
+                        <svg
+                          class="w-3 h-3"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 18 2"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M1 1h16"
+                          />
+                        </svg>
+                      </button>
+                      <div class="ms-3">
+                        <input
+                          type="number"
+                          id="first_product"
+                          class="bg-gray-50 w-14 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block px-2.5 py-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          placeholder="1"
+                          required
+                        />
+                      </div>
+                      <button
+                        class="inline-flex items-center justify-center h-6 w-6 p-1 ms-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                        type="button"
+                      >
+                        <span class="sr-only">Quantity button</span>
+                        <svg
+                          class="w-3 h-3"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 18 18"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 1v16M1 9h16"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4">
+                    Lorem İpsum jkasdhjkas jkdhajks jkahdjkadhs
+                  </td>
+                  <td class="px-6 py-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eius sunt ducimus quaerat, reiciendis eum possimus
+                    cupiditate fugit
+                  </td>
+                  <td class="px-6 py-4">
+                    <div class="flex flex-row">
+                      <a
+                        class="bg-green-500 text-white text-md px-3 py-2 rounded-md me-3"
+                        ><i class="fa-solid fa-pen-to-square"></i
+                      ></a>
+                      <a
+                        class="bg-red-500 text-white text-md px-3 py-2 rounded-md me-3"
+                        ><i class="fa-solid fa-trash"></i
+                      ></a>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4">13/04/1997</td>
+                </tr>
+                <tr class="bg-white border-b border-gray-200">
+                  <td class="px-6 py-4">
+                    <div class="flex items-center">
+                      <button
+                        class="inline-flex items-center justify-center p-1 text-sm font-medium h-6 w-6 text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                        type="button"
+                      >
+                        <span class="sr-only">Quantity button</span>
+                        <svg
+                          class="w-3 h-3"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 18 2"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M1 1h16"
+                          />
+                        </svg>
+                      </button>
+                      <div class="ms-3">
+                        <input
+                          type="number"
+                          id="first_product"
+                          class="bg-gray-50 w-14 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block px-2.5 py-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          placeholder="1"
+                          required
+                        />
+                      </div>
+                      <button
+                        class="inline-flex items-center justify-center h-6 w-6 p-1 ms-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                        type="button"
+                      >
+                        <span class="sr-only">Quantity button</span>
+                        <svg
+                          class="w-3 h-3"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 18 18"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 1v16M1 9h16"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4">
+                    Lorem İpsum jkasdhjkas jkdhajks jkahdjkadhs
+                  </td>
+                  <td class="px-6 py-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eius sunt ducimus quaerat, reiciendis eum possimus
+                    cupiditate fugit
+                  </td>
+                  <td class="px-6 py-4">
+                    <div class="flex flex-row">
+                      <a
+                        class="bg-green-500 text-white text-md px-3 py-2 rounded-md me-3"
+                        ><i class="fa-solid fa-pen-to-square"></i
+                      ></a>
+                      <a
+                        class="bg-red-500 text-white text-md px-3 py-2 rounded-md me-3"
+                        ><i class="fa-solid fa-trash"></i
+                      ></a>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4">13/04/1997</td>
+                </tr>
+                <tr class="bg-white border-b border-gray-200">
+                  <td class="px-6 py-4">
+                    <div class="flex items-center">
+                      <button
+                        class="inline-flex items-center justify-center p-1 text-sm font-medium h-6 w-6 text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                        type="button"
+                      >
+                        <span class="sr-only">Quantity button</span>
+                        <svg
+                          class="w-3 h-3"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 18 2"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M1 1h16"
+                          />
+                        </svg>
+                      </button>
+                      <div class="ms-3">
+                        <input
+                          type="number"
+                          id="first_product"
+                          class="bg-gray-50 w-14 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block px-2.5 py-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          placeholder="1"
+                          required
+                        />
+                      </div>
+                      <button
+                        class="inline-flex items-center justify-center h-6 w-6 p-1 ms-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                        type="button"
+                      >
+                        <span class="sr-only">Quantity button</span>
+                        <svg
+                          class="w-3 h-3"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 18 18"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 1v16M1 9h16"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4">
+                    Lorem İpsum jkasdhjkas jkdhajks jkahdjkadhs
+                  </td>
+                  <td class="px-6 py-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eius sunt ducimus quaerat, reiciendis eum possimus
+                    cupiditate fugit
+                  </td>
+                  <td class="px-6 py-4">
+                    <div class="flex flex-row">
+                      <a
+                        class="bg-green-500 text-white text-md px-3 py-2 rounded-md me-3"
+                        ><i class="fa-solid fa-pen-to-square"></i
+                      ></a>
+                      <a
+                        class="bg-red-500 text-white text-md px-3 py-2 rounded-md me-3"
+                        ><i class="fa-solid fa-trash"></i
+                      ></a>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4">13/04/1997</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
   </body>
