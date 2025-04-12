@@ -1,12 +1,22 @@
-function generateRandomString(length = 12) {
-  const chars = "abcdefghijklmnopqrstuvwxyz0123456789";
-  let result = "";
-  for (let i = 0; i < length; i++) {
-    const randomIndex = Math.floor(Math.random() * chars.length);
-    result += chars[randomIndex];
-  }
-  return result;
+
+
+const menuToggle = document.getElementById("menuToggle");
+const menuClose = document.getElementById("menuClose");
+const sideMenu = document.getElementById("sideMenu");
+const backdrop = document.getElementById("backdrop");
+
+function openMenu() {
+  sideMenu.classList.remove("translate-x-full");
+  sideMenu.classList.add("translate-x-0");
+  backdrop.classList.remove("hidden");
 }
 
-const randomString = generateRandomString();
-console.log(randomString);
+function closeMenu() {
+  sideMenu.classList.add("translate-x-full");
+  sideMenu.classList.remove("translate-x-0");
+  backdrop.classList.add("hidden");
+}
+
+menuToggle.addEventListener("click", openMenu);
+menuClose.addEventListener("click", closeMenu);
+backdrop.addEventListener("click", closeMenu); 
